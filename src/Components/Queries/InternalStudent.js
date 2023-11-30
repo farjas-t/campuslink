@@ -24,7 +24,7 @@ const InternalStudent = () => {
 
   return (
     <main className="internal">
-      <h2 className="mb-2 mt-3 whitespace-break-spaces text-4xl font-bold text-violet-950 underline decoration-inherit decoration-2 underline-offset-4 dark:mt-0 dark:text-slate-400 md:text-6xl">
+      <h2 className="mb-8 mt-3 whitespace-break-spaces text-4xl font-bold text-blue-950 dark:mt-0 dark:text-white md:text-6xl">
         Internal Mark
       </h2>
       <div>{error ? <ErrorStrip error={error} /> : ""}</div>
@@ -52,7 +52,7 @@ const InternalStudent = () => {
                       parseInt(paper?.marks.assignment) +
                       parseInt(paper?.marks.attendance) >
                     7
-                      ? "border-t-[1px] border-slate-400 bg-violet-900/50 first:border-none"
+                      ? "border-t-[1px] border-slate-400 bg-blue-900/50 first:border-none"
                       : "border-t-[1px] border-slate-400 first:border-none"
                   }
                 >

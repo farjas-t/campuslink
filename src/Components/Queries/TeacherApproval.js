@@ -58,7 +58,7 @@ const TeacherApproval = () => {
     <>
       {user.role === "HOD" ? (
         <main className="teacher__approval">
-          <h2 className="mb-2 mt-3 whitespace-break-spaces text-4xl font-bold text-violet-950 underline decoration-inherit decoration-2 underline-offset-4 dark:mt-0 dark:text-slate-400 md:text-6xl">
+          <h2 className="mb-8 mt-3 whitespace-break-spaces text-4xl font-bold text-blue-950 dark:mt-0 dark:text-white md:text-6xl">
             Approve Teacher
           </h2>
           <h3 className="text-2xl font-semibold">
@@ -98,7 +98,7 @@ const TeacherApproval = () => {
                             type="button"
                             id={index}
                             onClick={(e) => handleApprove(e)}
-                            className="m-0 flex h-auto w-full justify-center bg-transparent  py-3 text-xl text-slate-100 hover:bg-violet-900 "
+                            className="m-0 flex h-auto w-full justify-center bg-transparent  py-3 text-xl text-slate-100 hover:bg-blue-900 "
                           >
                             <FaPlus />
                           </button>

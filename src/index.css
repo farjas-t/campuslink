@@ -5,7 +5,7 @@
 
 @layer html {
   :root {
-    --toastify-color-light: #7c3aed;
+    --toastify-color-light: #3a82ed;
     --toastify-text-color-light: #ddd6fe;
   }
 
@@ -28,7 +28,7 @@
   }
 
   .radio:has(input:checked) {
-    color: #a78bfa;
+    color: #8bb7fa;
     font-weight: bold;
   }
 
@@ -43,19 +43,19 @@
   }
 
   #nav a.active {
-    background-color: #4c1d95;
+    background-color: #1d4395;
     border-radius: 0.375rem;
   }
 
   #register a.active {
-    color: #8b5cf6 !important;
+    color: #5cb1f6 !important;
   }
 
   #resister #root .toast {
-    color: #2e1065 !important;
+    color: #1d1065 !important;
   }
   #root .toast-body {
-    color: #2e1065 !important;
+    color: #1d1065 !important;
   }
   #root .toast-rounded {
     border-radius: 6px !important;
@@ -73,16 +73,16 @@
   }
 
   /* #root .toast-progress {
-    background: #6d28d9 !important;
+    background: #2866d9 !important;
   } */
 
   @media (prefers-color-scheme: dark) {
     #nav a.active {
-      background-color: #6d28d9;
+      background-color: #2866d9;
       border-radius: 0.375rem;
     }
     #register a.active {
-      color: #4c1d95;
+      color: #1d4395;
     }
     option {
       background-color: #cbd5e1;
@@ -96,7 +96,7 @@
     }
     #root .toast-rounded {
       border-radius: 6px !important;
-      background-color: #2e1065 !important;
+      background-color: #1d1065 !important;
     }
   }
 }

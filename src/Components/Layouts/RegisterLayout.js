@@ -33,7 +33,7 @@ const RegisterLayout = () => {
               className="flex items-center font-inter text-xl font-semibold text-slate-900 dark:text-slate-50"
               to="../"
             >
-              <p className="decoration-violet-900 decoration-2 hover:underline dark:decoration-violet-300">
+              <p className="decoration-blue-900 decoration-2 hover:underline dark:decoration-blue-300">
                 Campus Link
               </p>
             </Link>

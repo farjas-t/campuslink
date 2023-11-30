@@ -71,7 +71,7 @@ const JoinPaper = () => {
     <>
       {user.role === "student" ? (
         <main>
-          <h2 className="mb-2 mt-3 whitespace-break-spaces text-4xl font-bold text-violet-950 underline decoration-inherit decoration-2 underline-offset-4 dark:mt-0 dark:text-slate-400 md:text-6xl">
+          <h2 className="mb-8 mt-3 whitespace-break-spaces text-4xl font-bold text-blue-950 dark:mt-0 dark:text-white md:text-6xl">
             Manage Paper
           </h2>
           <form>
@@ -115,7 +115,7 @@ const JoinPaper = () => {
                                 id={paper._id}
                                 name={index}
                                 onClick={(e) => handleJoin(e)}
-                                className="m-0 flex h-auto w-full justify-center bg-transparent py-3  text-lg  hover:bg-violet-900 hover:text-slate-100 dark:text-slate-100 "
+                                className="m-0 flex h-auto w-full justify-center bg-transparent py-3  text-lg  hover:bg-blue-900 hover:text-slate-100 dark:text-slate-100 "
                               >
                                 Join
                               </button>
