@@ -10,7 +10,6 @@ const TeacherForm = () => {
   const [teacher, setTeacher] = useState({
     name: "",
     email: "",
-    qualification: "",
     department: "",
     role: "",
     username: "",
@@ -70,18 +69,6 @@ const TeacherForm = () => {
         id="email"
         name="email"
         value={teacher.email}
-        onChange={(e) => handleFormChange(e)}
-      />
-      <label className="block" htmlFor="qualification">
-        Qualification:
-      </label>
-      <input
-        className="mb-4 block h-10  w-full rounded-md border-[1.5px] border-solid border-slate-400 p-1 pl-2 outline-none selection:border-slate-200 focus:border-blue-900 dark:border-slate-200 dark:caret-inherit dark:focus:border-blue-400 dark:active:border-blue-400 "
-        type="text"
-        required
-        name="qualification"
-        id="qualification"
-        value={teacher.qualification}
         onChange={(e) => handleFormChange(e)}
       />
       <label className="block" htmlFor="department">

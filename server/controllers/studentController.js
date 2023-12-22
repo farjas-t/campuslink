@@ -32,10 +32,10 @@ const getAllStudents = asyncHandler(async (req, res) => {
 // @route POST /Student
 // @access Private
 const createNewStudent = asyncHandler(async (req, res) => {
-  const { name, course, email, username, password } = req.body;
+  const { name, email, username, password } = req.body;
 
   // Confirm Data
-  if (!name || !email || !course || !username || !password) {
+  if (!name || !email || !username || !password) {
     return res.status(400).json({ message: "All fields are required" });
   }
 
@@ -51,7 +51,6 @@ const createNewStudent = asyncHandler(async (req, res) => {
 
   const studentObj = {
     name,
-    course,
     email,
     username,
     password: hashedPwd,

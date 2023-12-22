@@ -72,7 +72,6 @@ const TeacherApproval = () => {
                     <tr className="rounded-t-xl bg-slate-900 text-base text-slate-100">
                       <th className="p-2 ">Name</th>
                       <th className="p-2 ">Email</th>
-                      <th className="p-2 ">Qualification</th>
                       <th className="p-2 ">Username</th>
                       <th className="p-2 ">Approve</th>
                       <th className="p-2 ">Reject</th>
@@ -86,9 +85,6 @@ const TeacherApproval = () => {
                         </td>
                         <td className="border-t-[1px] border-slate-400 p-2">
                           {teacher.email}
-                        </td>
-                        <td className="border-t-[1px] border-slate-400 p-2">
-                          {teacher.qualification}
                         </td>
                         <td className="border-t-[1px] border-slate-400 p-2">
                           {teacher.username}

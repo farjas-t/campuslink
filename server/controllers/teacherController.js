@@ -58,18 +58,10 @@ const getTeacherList = asyncHandler(async (req, res) => {
 // @route POST /Teacher
 // @access Private
 const createNewTeacher = asyncHandler(async (req, res) => {
-  const { username, name, email, qualification, department, password, role } =
-    req.body;
+  const { username, name, email, department, password, role } = req.body;
 
   // Confirm Data
-  if (
-    !username ||
-    !name ||
-    !email ||
-    !qualification ||
-    !department ||
-    !password
-  ) {
+  if (!username || !name || !email || !department || !password) {
     return res.status(400).json({ message: "All fields are required" });
   }
 
@@ -87,7 +79,6 @@ const createNewTeacher = asyncHandler(async (req, res) => {
     username,
     name,
     email,
-    qualification,
     department,
     password: hashedPwd,
     role,
